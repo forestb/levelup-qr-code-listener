@@ -3,11 +3,15 @@
 ## Description
 The goal of this project was to create a headless listener that was capable of intercepting and identifying LevelUp QR codes on Win32 machines regardless of which Windows application had focus.
 
-The application is a simple, templated console application that consumes the library.
+I've included two sample applications, since the contexts are a bit different.
+
+The first application is a simple, templated console application that consumes the library (see [usage](#usage)). 
+
+The second application is a simple, templated Winforms application which also consumes the library.
 
 The library wraps the unmanaged Windows API. By intercepting key strokes, we can detect whether or not a LevelUp QR code was scanned, extract that QR code, and pass it back to the consumer of this library via delegate method.
 
-See [usage](#usage).
+![](https://github.com/forestb/levelup-qr-code-listener/blob/master/readme-assets/example.png)
 
 ## Table of Contents
 - [Installation](#Installation)
