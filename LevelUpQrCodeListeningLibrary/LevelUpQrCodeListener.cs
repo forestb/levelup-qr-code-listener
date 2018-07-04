@@ -22,7 +22,9 @@ namespace LevelUpQrCodeListenerLibrary
 
         private static Action<string> LevelUpPaymentTokenFound { get; set; }
 
-        private static readonly LevelUpPaymentTokenHelper LevelUpPaymentTokenHelper = new LevelUpPaymentTokenHelper();
+        private readonly LevelUpPaymentTokenHelper _levelUpPaymentTokenHelper = new LevelUpPaymentTokenHelper();
+
+        private readonly KeysConverter _keyConvert = new KeysConverter();
 
         public void StartListener(Action<string> levelUpPaymentTokenFound)
         {
@@ -65,15 +67,17 @@ namespace LevelUpQrCodeListenerLibrary
 
             if (shouldAppendKeyPress)
             {
-                LevelUpPaymentTokenHelper.Buffer.Enqueue(key.ToString());
+                string k = _keyConvert.ConvertToString(key);
 
-                if (LevelUpPaymentTokenHelper.ContainsDelimiters() && LevelUpPaymentTokenHelper.IsValid())
+                _levelUpPaymentTokenHelper.Buffer.Enqueue(k);
+
+                if (_levelUpPaymentTokenHelper.ContainsDelimiters() && _levelUpPaymentTokenHelper.IsValid())
                 {
-                    string qrCode = LevelUpPaymentTokenHelper.GetPaymentToken();
+                    string qrCode = _levelUpPaymentTokenHelper.GetPaymentToken();
 
                     LevelUpPaymentTokenFound?.Invoke(qrCode);
 
-                    LevelUpPaymentTokenHelper.ClearBuffer();
+                    _levelUpPaymentTokenHelper.ClearBuffer();
                 }
             }
         }
