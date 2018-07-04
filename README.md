@@ -14,11 +14,11 @@ The library wraps the unmanaged Windows API. By intercepting key strokes, we can
 ![](https://github.com/forestb/levelup-qr-code-listener/blob/master/readme-assets/example.png)
 
 ## Table of Contents
-- [Installation](#Installation)
-- [Usage](#Usage)
-- [Contributing](#Contributing)
-- [Credits](#Credits)
-- [License](#License)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [Credits](#credits)
+- [License](#license)
 
 ## Installation
 This library is not (yet) available as a NuGet package; references must be added manually: `Project -> Add -> Reference`.
