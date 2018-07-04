@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9058C34B-CA23-45B7-ABEC-454C56E76D6C}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LevelUpQrCodeListeningApp", "LevelUpQrCodeListeningApp\LevelUpQrCodeListeningApp.csproj", "{0EAD3BC9-1216-4D12-AD57-E129391733ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LevelUpQrCodeListeningLibrary", "LevelUpQrCodeListeningLibrary\LevelUpQrCodeListeningLibrary.csproj", "{D76BDAB1-0CED-470F-9550-E84EE823BC57}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0EAD3BC9-1216-4D12-AD57-E129391733ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EAD3BC9-1216-4D12-AD57-E129391733ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EAD3BC9-1216-4D12-AD57-E129391733ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EAD3BC9-1216-4D12-AD57-E129391733ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D76BDAB1-0CED-470F-9550-E84EE823BC57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D76BDAB1-0CED-470F-9550-E84EE823BC57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D76BDAB1-0CED-470F-9550-E84EE823BC57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D76BDAB1-0CED-470F-9550-E84EE823BC57}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {36FD5DC9-98DA-450E-A56C-F1D98AA17159}
+	EndGlobalSection
+EndGlobal
