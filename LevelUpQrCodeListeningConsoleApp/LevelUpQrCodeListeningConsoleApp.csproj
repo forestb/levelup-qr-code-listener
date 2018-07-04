@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{0EAD3BC9-1216-4D12-AD57-E129391733ED}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>LevelUpQrCodeListenerApp</RootNamespace>
-    <AssemblyName>LevelUpQrCodeListenerApp</AssemblyName>
+    <RootNamespace>LevelUpQrCodeListenerConsoleApp</RootNamespace>
+    <AssemblyName>LevelUpQrCodeListenerConsoleApp</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

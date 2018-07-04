@@ -8,13 +8,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LevelUpQrCodeListeningApp", "LevelUpQrCodeListeningApp\LevelUpQrCodeListeningApp.csproj", "{0EAD3BC9-1216-4D12-AD57-E129391733ED}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LevelUpQrCodeListeningLibrary", "LevelUpQrCodeListeningLibrary\LevelUpQrCodeListeningLibrary.csproj", "{D76BDAB1-0CED-470F-9550-E84EE823BC57}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LevelUpQrCodeListeningWinformsApp", "LevelUpQrCodeListeningWinformsApp\LevelUpQrCodeListeningWinformsApp.csproj", "{E840F961-5491-4A22-9B18-53FC4CEB8850}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Apps", "Apps", "{D8676F9F-3331-4DD4-824A-45177F6A72C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LevelUpQrCodeListeningConsoleApp", "LevelUpQrCodeListeningConsoleApp\LevelUpQrCodeListeningConsoleApp.csproj", "{0EAD3BC9-1216-4D12-AD57-E129391733ED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -22,10 +22,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0EAD3BC9-1216-4D12-AD57-E129391733ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0EAD3BC9-1216-4D12-AD57-E129391733ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0EAD3BC9-1216-4D12-AD57-E129391733ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0EAD3BC9-1216-4D12-AD57-E129391733ED}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D76BDAB1-0CED-470F-9550-E84EE823BC57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D76BDAB1-0CED-470F-9550-E84EE823BC57}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D76BDAB1-0CED-470F-9550-E84EE823BC57}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -34,13 +30,17 @@ Global
 		{E840F961-5491-4A22-9B18-53FC4CEB8850}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E840F961-5491-4A22-9B18-53FC4CEB8850}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E840F961-5491-4A22-9B18-53FC4CEB8850}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EAD3BC9-1216-4D12-AD57-E129391733ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EAD3BC9-1216-4D12-AD57-E129391733ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EAD3BC9-1216-4D12-AD57-E129391733ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EAD3BC9-1216-4D12-AD57-E129391733ED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{0EAD3BC9-1216-4D12-AD57-E129391733ED} = {D8676F9F-3331-4DD4-824A-45177F6A72C7}
 		{E840F961-5491-4A22-9B18-53FC4CEB8850} = {D8676F9F-3331-4DD4-824A-45177F6A72C7}
+		{0EAD3BC9-1216-4D12-AD57-E129391733ED} = {D8676F9F-3331-4DD4-824A-45177F6A72C7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {36FD5DC9-98DA-450E-A56C-F1D98AA17159}
