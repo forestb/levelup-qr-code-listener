@@ -18,6 +18,13 @@ namespace LevelUpQrCodeListenerLibrary
 
         }
 
+        private bool _disposed = false;
+
+        ~LevelUpQrCodeListener()
+        {
+            this.Dispose();
+        }
+
         private IntPtr _hookId = IntPtr.Zero;
 
         private static Action<string> LevelUpPaymentTokenFound { get; set; }
@@ -41,7 +48,12 @@ namespace LevelUpQrCodeListenerLibrary
 
         public void StopListener()
         {
-            NativeMethods.UnhookWindowsHookEx(_hookId);
+            if (_hookId != IntPtr.Zero)
+            {
+                NativeMethods.UnhookWindowsHookEx(_hookId);
+
+                _hookId = IntPtr.Zero;
+            }
         }
 
         private IntPtr HookCallback(int nCode, IntPtr wParam, IntPtr lParam)
@@ -90,7 +102,12 @@ namespace LevelUpQrCodeListenerLibrary
 
         public void Dispose()
         {
-            StopListener();
+            if (!_disposed)
+            {
+                StopListener();
+
+                _disposed = true;
+            }
         }
     }
 }
