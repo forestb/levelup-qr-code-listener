@@ -26,11 +26,17 @@ namespace LevelUpQrCodeListenerLibrary
 
         private readonly KeysConverter _keyConvert = new KeysConverter();
 
+        private NativeMethodDelegates.LowLevelKeyboardProc _hookCallback;
+
         public void StartListener(Action<string> levelUpPaymentTokenFound)
         {
             LevelUpPaymentTokenFound = levelUpPaymentTokenFound;
 
-            _hookId = SetHook(HookCallback);
+            _hookCallback = HookCallback;
+
+            GC.KeepAlive(_hookCallback);
+
+            _hookId = SetHook(_hookCallback);
         }
 
         public void StopListener()
@@ -86,5 +92,9 @@ namespace LevelUpQrCodeListenerLibrary
         {
             StopListener();
         }
+    }
+
+    public class HookCallback
+    {
     }
 }
