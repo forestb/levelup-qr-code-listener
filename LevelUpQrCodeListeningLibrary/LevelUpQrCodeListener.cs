@@ -27,7 +27,7 @@ namespace LevelUpQrCodeListenerLibrary
 
         private IntPtr _hookId = IntPtr.Zero;
 
-        private static Action<string> LevelUpPaymentTokenFound { get; set; }
+        private Action<string> LevelUpPaymentTokenFound { get; set; }
 
         private readonly LevelUpPaymentTokenHelper _levelUpPaymentTokenHelper = new LevelUpPaymentTokenHelper();
 
