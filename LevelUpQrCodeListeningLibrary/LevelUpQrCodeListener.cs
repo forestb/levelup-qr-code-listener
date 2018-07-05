@@ -93,8 +93,4 @@ namespace LevelUpQrCodeListenerLibrary
             StopListener();
         }
     }
-
-    public class HookCallback
-    {
-    }
 }
